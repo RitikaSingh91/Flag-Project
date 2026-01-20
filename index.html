@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Indian Flag </title>
+
+  <style>
+    .flag {
+      width: 900px;
+      height: 600px;
+      border: 2px solid black;
+    }
+
+    .saffron {
+      background-color: #FF9933;
+      height: 200px;
+      width: 100%;
+    }
+
+    .white {
+      background-color: white;
+      height: 200px;
+      width: 100%;
+      position: relative;
+    }
+
+    .green {
+      background-color: #138808;
+      height: 200px;
+      width: 100%;
+    }
+
+    .chakra {
+      width: 120px;
+      height: 120px;
+      border: 5px solid #000080;
+      border-radius: 50%;
+      position: absolute;
+      top: 40px;
+      left: 390px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .spoke {
+      position: absolute;
+      width: 2px;
+      height: 120px;
+      background-color: #000080;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <h1 style="text-align:Left center ;">Flag of India</h1>
+
+  <div class="flag">
+    <div class="saffron"></div>
+
+    <div class="white">
+      <div class="chakra">
+
+      <!-- I write with the help of google  -->
+        <script>
+          for(let i=0; i<24; i++){
+            let line = document.createElement("div");
+            line.className = "spoke";
+            line.style.transform = "rotate(" + (i * 15) + "deg)";
+            document.querySelector(".chakra").appendChild(line);
+          }
+        </script>
+
+      </div>
+    </div>
+
+    <div class="green"></div>
+  </div>
+
+  <p style="text-align:left;font-size:24px;">Proud to be Indian</p>
+
+</body>
+</html>
